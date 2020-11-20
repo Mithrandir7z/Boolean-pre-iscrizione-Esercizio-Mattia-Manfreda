@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Esercizio Boolean</title>
+        <link rel="stylesheet" href="layout.css">
+    </head>
+   
+    <body>
+        <!--Creazione del main container-->
+        <div class="container">
+
+            <!--Creazione dell'header che conterrà il logo e i pulsanti-->
+            <header class="container__header">
+                <div class="container__header__logo">
+
+                    <!--Inserimento logo-->
+                    <img src="img/logo.png" alt="logo">
+                    <span>Taking Booleaners from A to B</span>
+
+                    <!--Creazione dei bottoni prenota - termina prenotazione - accendi luci, che saranno impostate in 3 div in linea-->
+                    <div class="container__header__button">
+                        <div class="col_left">
+                            <input type="button" value="Prenota" class="button1">
+                        </div>
+                        <div class="col_center">
+                            <input type="button" value="Termina Prenotazione" class="button2">
+                        </div>
+                        <div class="col_right">
+                            <input type="button" value="Accendi Luci" class="button3">
+                        </div>
+                    <div class="clearfix"></div>
+                    </div>
+                </div>
+            <!--clearfix per evitare il collasso dei div "floattati"-->
+            <div class="clearfix"></div>
+            </header>
+
+            <!--Inserimento di un container body, poi inserimento del testo e le informazioni relative al cliente
+            Infine faccio un copia/incolla modificando solo la barra dell'energia che sarà unica e che quindi sarà selezionata come id-->
+            <section class="body">
+                <div class="body__col">
+                    <div class="body__col__energy">
+                        <input type="checkbox"><span class="user">Monopattino Gino22</span><br>
+                        <span class="user_position">&#8614 Via Guadalametri - a 220 metri da te</span><br>
+                        <span class="stato_carica">Stato carica:</span>
+                        <div id="carica1"></div>
+                    </div>
+                </div>
+
+                <div class="body__col">
+                    <div class="body__col__energy">
+                        <input type="checkbox"><span class="user">Monopattino Mike24</span><br>
+                        <span class="user_position">&#8614 Via Ricciardoni - a 420 metri da te</span><br>
+                        <span class="stato_carica">Stato carica:</span>
+                        <div id="carica2"></div>
+                    </div>
+                </div>
+
+                <div class="body__col">
+                    <div class="body__col__energy">
+                        <input type="checkbox"><span class="user">Monopattino Fede154</span><br>
+                        <span class="user_position">&#8614 Via Mentarini - a 490 metri da te</span><br>
+                        <span class="stato_carica">Stato carica:</span>
+                        <div id="carica3"></div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </body>
+</html>
